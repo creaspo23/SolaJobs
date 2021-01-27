@@ -158,6 +158,14 @@
                                                     placeholder="experience" style="transition: all 0.15s ease 0s;" />
                                             </div>
 
+                                            <div class="relative w-full mb-3">
+                                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                    for="grid-password">about your self</label><textarea 
+                                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                                    placeholder="" style="transition: all 0.15s ease 0s;" >
+                                                    </textarea>
+                                            </div>
+
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
