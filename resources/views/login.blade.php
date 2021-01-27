@@ -8,9 +8,10 @@
         <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
             <div class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
                 <a class="inline-block py-2 mr-4 font-sans text-sm font-bold leading-relaxed text-white whitespace-no-wrap text-md"
-                    href="{{ '/' }}" style="font-style: italic; font-family:Roboto;">
-                    <img src="../assets/img/logo.svg"  width="80" height="100"> 
-                    <span class="text-lg text-blue-500 uppercase">S</span>ola<span class="text-lg text-blue-500 uppercase">J</span>obs
+                    href="{{ '/home' }}" style="font-style: italic; font-family:Roboto;">
+                    <img src="../assets/img/logo.svg" width="80" height="100" style="margin-bottom: -15px;">
+                    <span class="text-lg text-blue-500 uppercase">S</span>ola<span
+                        class="text-lg text-blue-500 uppercase">J</span>obs
                 </a>
                 <button
                     class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
@@ -30,24 +31,25 @@
     <main>
         <section class="absolute w-full h-full">
             <div class="absolute top-0 w-full h-full bg-gray-900"
-                style="background-image: url(../assets/img/pro.jpeg); background-size: 100%; background-repeat: no-repeat;">
+                style="background-image: url(../assets/img/bg3.jpeg); background-size: 100%; background-repeat: no-repeat;">
             </div>
-            <div class="container h-full px-4 mx-10">
+            <div class="container h-full px-4 mx-auto">
                 <div class="flex items-center content-center justify-center h-full">
                     <div class="w-full px-4 lg:w-4/12">
                         <div
                             class="relative flex flex-col w-full min-w-0 mb-6 break-words bg-gray-300 border-0 rounded-lg shadow-lg">
                             <div class="px-6 py-6 mb-0 rounded-t">
                                 <div class="mb-3 text-center">
-                                    
-                                  
-                                        
-                                        <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-purple-600 rounded-full shadow-lg"
-                                            style="font-style: italic; font-family:Roboto; margin-bottom:20px ">
-                                            
-                                            <span class="text-4xl uppercase ">l</span>og<span class="text-4xl uppercase ">i</span>n
-                                        </div>
-                                  
+
+
+
+                                    <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-purple-600 rounded-full shadow-lg"
+                                        style="font-style: italic; font-family:Roboto; margin-bottom:20px ">
+
+                                        <span class="text-4xl uppercase ">l</span>og<span
+                                            class="text-4xl uppercase ">i</span>n
+                                    </div>
+
                                     <!-- <h6 class="text-sm font-bold text-gray-600 " style="margin-right: 15px;">
                                         Log In
                                     </h6> -->
@@ -63,7 +65,7 @@
                                 <form>
                                     <div class="relative w-full mb-3">
                                         <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                            for="grid-password">Full Name</label><input type="Name"
+                                            for="grid-password">User Name</label><input type="Name"
                                             class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                             placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
                                     </div>
@@ -73,18 +75,17 @@
                                             class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                             placeholder="Password" style="transition: all 0.15s ease 0s;" />
                                     </div>
-                                    
+
 
                                     <div class="mt-6 text-center">
                                         <button
-
                                             class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-600 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
                                             type="button" style="transition: all 0.15s ease 0s;">
                                             Log In
                                         </button>
                                     </div>
                                     <div class="flex flex-wrap mt-6">
-                                        
+
                                         <div class="w-1/2 mb-2 font-bold text-center gray-700 text- text-s ">
                                             <a href="{{ '/signup' }}" class="text-gray-900"><small>Create new
                                                     account</small></a>

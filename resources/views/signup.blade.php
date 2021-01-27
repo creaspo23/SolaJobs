@@ -8,8 +8,8 @@
         <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
             <div class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
                 <a class="inline-block py-2 mr-4 font-sans text-sm font-bold leading-relaxed text-white whitespace-no-wrap text-md"
-                    href="{{ '/' }}" style="font-style: italic; font-family:Roboto;">
-                    <img src="../assets/img/logo.svg" width="80" height="100">
+                    href="{{ '/home' }}" style="font-style: italic; font-family:Roboto;">
+                    <img src="../assets/img/logo.svg" width="80" height="100" style="margin-bottom: -15px;">
                     <span class="text-lg text-blue-500 uppercase">S</span>ola<span
                         class="text-lg text-blue-500 uppercase">J</span>obs
                 </a>
@@ -38,13 +38,13 @@
         </div>
     </nav>
     <main>
-        <section class="absolute w-full h-auto">
-            <div class="container bg-purple-600">
+        <section class="absolute w-full h-full">
+            <div class="container">
                 <div class="absolute top-0 w-full h-full bg-gray-900 "
-                    style="background-image: url(../assets/img/.png); background-size:cover; background-repeat: no-repeat;">
+                    style="background-image: url(../assets/img/bg3.jpeg); background-size:cover; background-repeat: no-repeat;">
                 </div>
-                <div class="container h-full px-4 mt-2  ">
-                    <div class="flex items-center content-center justify-center ml-9 ">
+                <div class="container h-full px-4 mx-auto">
+                    <div class="flex items-center content-center justify-center ">
                         <div class="w-full px-4 lg:w-4/12">
                             <div
                                 class="relative flex-col w-full min-w-0 pb-1 mb-6 break-words bg-gray-300 border-0 rounded-lg shadow-lg">
@@ -60,54 +60,52 @@
 
                                     <hr class="mt-6 border-gray-400 border-b-1" />
                                 </div>
-                                <div class="flex-auto px-4 py-10 pt-0 lg:px-10">
-                                    <div class="mb-3 font-bold text-center text-gray-500">
-
-                                    </div>
+                                <div class="flex-auto px-4 py-10 pt-0 lg:px-10" style="overflow:scroll; height:500px;">
+                                    
 
                                     <form>
                                         <div class="relative w-full mb-3">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                for="grid-password">Name</label><input type="Name"
-                                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                                placeholder="Name" style="transition: all 0.15s ease 0s;" />
+                                            <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                for="grid-password">User Name</label><input type="Name"
+                                                class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                placeholder="User Name" style="transition: all 0.15s ease 0s;" />
                                         </div>
 
+                                        <div class="relative w-full mb-3">
+                                            <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                for="grid-password">Full Name</label><input type="Name"
+                                                class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                                        </div>
 
                                         <div class="relative w-full mb-3">
                                             <label
-                                                class='block uppercase text-gray-700 text-xs font-bold mb-3'>Brithday</label>
-                                            <div class="flex justify-between  ">
+                                                class='block mb-3 text-xs font-bold text-gray-700 uppercase'>Brithday</label>
+                                            <div class="flex justify-between ">
                                                 <select
-                                                    class=" justify-items-stretch block appearance-none text-gray-600 bg-white border border-gray-400 shadow-inner rounded ">
+                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none justify-items-stretch">
                                                     <option>day ...</option>
                                                 </select>
 
                                                 <select
-                                                    class=" justify-items-stretch block appearance-none text-gray-600 bg-white border border-gray-400 shadow-inner rounded">
+                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none justify-items-stretch">
                                                     <option>month ...</option>
                                                 </select>
 
                                                 <select
-                                                    class="block appearance-none text-gray-600 bg-white border border-gray-400 shadow-inner rounded">
+                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none">
                                                     <option>year ...</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="relative w-full mb-3">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                for="grid-password">Age</label><input type="Age"
-                                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                                placeholder="Age" style="transition: all 0.15s ease 0s;" />
-                                        </div>
-                                        <div class="relative w-full mb-3">
-                                            <label class='block uppercase text-gray-700 text-xs font-bold mb-3'>pick
+                                            <label class='block mb-3 text-xs font-bold text-gray-700 uppercase'>pick
                                                 your
                                                 State</label>
-                                            <div class="flex-shrink w-full inline-block relative">
+                                            <div class="relative flex-shrink inline-block w-full">
                                                 <select
-                                                    class="block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-2 pr-8 rounded">
+                                                    class="block w-full px-4 py-2 pr-8 text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none">
                                                     <option>choose ...</option>
                                                     <option>Kh</option>
                                                     <option>Om</option>
@@ -118,11 +116,11 @@
                                         </div>
 
                                         <div class="relative w-full mb-3">
-                                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
                                                 for="grid-password">Gender</label>
-                                            <div class="flex justify-between">
+                                            <div class="">
                                                 <div class="mb-2 ">
-                                                    <div class="form-switch inline-block align-middle ml-2 text-xs ">
+                                                    <div class="inline-block ml-2 text-xs align-middle form-switch ">
                                                         <input type="checkbox" name="1" id="1"
                                                             class="form-switch-checkbox" />
                                                         <label class="form-switch-label" for="1"></label>
@@ -131,9 +129,9 @@
                                                 </div>
 
                                                 <div class="mb-2">
-                                                    <div class="form-switch inline-block align-middle text-xs">
+                                                    <div class="inline-block text-xs align-middle form-switch">
                                                         <input type="checkbox" name="2" id="2"
-                                                            class="form-switch-checkbox" />
+                                                            class="form-switch-checkbox" style="margin-left: 8px;" />
                                                         <label class="form-switch-label" for="2"></label>
                                                     </div>
                                                     <label class="text-xs text-grey-dark" for="2">Female</label>
@@ -141,34 +139,40 @@
                                             </div>
 
                                             <div class="relative w-full mb-3">
-                                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                    for="grid-password">Email</label><input type="email"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                    placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                                            </div>
+                                            <div class="relative w-full mb-3">
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                    for="grid-password">Phone Number</label><input type="phone"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                    placeholder="+249" style="transition: all 0.15s ease 0s;" />
+                                            </div>
+
+                                            <div class="relative w-full mb-3">
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
                                                     for="grid-password">Experience</label><input type="Experience"
-                                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="experience" style="transition: all 0.15s ease 0s;" />
                                             </div>
 
+
                                             <div class="relative w-full mb-3">
-                                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                    for="grid-password">Phone</label><input type="phone"
-                                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                                    placeholder="+249" style="transition: all 0.15s ease 0s;" />
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                    for="grid-password">Password</label><input type="password"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                    placeholder="Password" style="transition: all 0.15s ease 0s;" />
                                             </div>
+
                                             <div class="relative w-full mb-3">
-                                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                    for="grid-password">Email</label><input type="email"
-                                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                                    placeholder="you@example.com"
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                    for="grid-password">confierm password</label><input type="password"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                    placeholder="confierm password"
                                                     style="transition: all 0.15s ease 0s;" />
                                             </div>
-
-                                            <div
-                                                class="relative w-full mb-3 items-center justify-center bg-grey-lighter">
-                                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                    for="bio">Bio:</label>
-                                                <textarea name="bio" id="bio" cols="30" rows="6"
-                                                    placeholder="talk a bout your self"></textarea>
-                                            </div>
-
 
                                             <div class="mt-6 text-center">
                                                 <button

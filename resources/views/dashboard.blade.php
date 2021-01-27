@@ -130,7 +130,7 @@
               <li class="items-center">
                 <a
                   class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-                  href="#/profile"
+                  href="/home"
                   ><i class="fas fa-user-circle text-gray-500 mr-2 text-sm"></i>
                   Visit Website</a
                 >

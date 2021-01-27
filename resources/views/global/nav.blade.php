@@ -1,49 +1,38 @@
-<nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
-    >
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-      >
-        <div
-          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-        >
-          <a
-            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-            href="{{"/"}}"
-            >SolaJobs</a
-          ><button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-            onclick="toggleNavbar('example-collapse-navbar')"
-          >
-            <i class="text-white fas fa-bars"></i>
-          </button>
-        </div>
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
+<nav class="absolute top-0 z-50 flex flex-wrap items-center justify-between w-full px-2 py-3 navbar-expand-lg">
+    <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
+        <div class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
 
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="flex items-center">
+            <div class="inline-block py-2 mr-4 font-sans text-sm font-bold leading-relaxed text-white whitespace-no-wrap text-md"
+                href="{{ '/home' }}" style="font-style: italic; font-family:Roboto;">
+                <img src="../assets/img/logo.svg" width="80" height="100" style="margin-bottom: -15px;">
+                <span class="text-lg text-blue-500 uppercase">S</span>ola<span
+                    class="text-lg text-blue-500 uppercase">J</span>obs
+            </div>
             <button
-              class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-              type="button"
-              style="transition: all 0.15s ease 0s;"
-            >
-              <i class="fas fa-arrow-alt-circle-down"></i><a href="{{"/login"}}"> Login</a>
+                class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
+                type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <i class="text-white fas fa-bars"></i>
             </button>
-          </li>
-          <li class="flex items-center">
-            <button
-              class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-              type="button"
-              style="transition: all 0.15s ease 0s;"
-            >
-              <i class="fas fa-arrow-alt-circle-down"></i> <a href="{{"/signup"}}">Sign Up </a> 
-            </button>
-          </li>
-        </ul>
         </div>
-      </div>
-    </nav>
+        <div class="items-center flex-grow hidden bg-white lg:flex lg:bg-transparent lg:shadow-none"
+            id="example-collapse-navbar">
+
+            <ul class="flex flex-col list-none lg:flex-row lg:ml-auto">
+                <li class="flex items-center">
+                    <button
+                        class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-gray-800 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
+                        type="button" style="transition: all 0.15s ease 0s;">
+                        <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Login</a>
+                    </button>
+                </li>
+                <li class="flex items-center">
+                    <button
+                        class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-gray-800 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
+                        type="button" style="transition: all 0.15s ease 0s;">
+                        <i class="fas fa-arrow-alt-circle-down"></i> <a href="{{ '/signup' }}">Sign Up </a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
