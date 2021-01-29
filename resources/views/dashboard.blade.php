@@ -193,10 +193,10 @@ top: 60%;">
                       <div class="flex flex-wrap">
                         <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                           <h5 class="text-gray-500 uppercase font-bold text-xs">
-                            Traffic
+                            Jobs
                           </h5>
                           <span class="font-semibold text-xl text-gray-800">
-                            350,897
+                            350
                           </span>
                         </div>
                         <div class="relative w-auto pl-4 flex-initial">
@@ -225,7 +225,7 @@ top: 60%;">
                             New users
                           </h5>
                           <span class="font-semibold text-xl text-gray-800">
-                            2,356
+                            23
                           </span>
                         </div>
                         <div class="relative w-auto pl-4 flex-initial">
@@ -251,10 +251,10 @@ top: 60%;">
                       <div class="flex flex-wrap">
                         <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                           <h5 class="text-gray-500 uppercase font-bold text-xs">
-                            Sales
+                            Companies
                           </h5>
                           <span class="font-semibold text-xl text-gray-800">
-                            924
+                            92
                           </span>
                         </div>
                         <div class="relative w-auto pl-4 flex-initial">
@@ -268,7 +268,7 @@ top: 60%;">
                           <i class="fas fa-arrow-down"></i> 1.10%
                         </span>
                         <span class="whitespace-no-wrap">
-                          Since yesterday
+                          Since last Month
                         </span>
                       </p>
                     </div>
@@ -280,10 +280,10 @@ top: 60%;">
                       <div class="flex flex-wrap">
                         <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                           <h5 class="text-gray-500 uppercase font-bold text-xs">
-                            Performance
+                            Applicathions
                           </h5>
                           <span class="font-semibold text-xl text-gray-800">
-                            49,65%
+                            49
                           </span>
                         </div>
                         <div class="relative w-auto pl-4 flex-initial">

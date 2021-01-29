@@ -3,7 +3,7 @@
 <title>Sing Up</title>
 @yield('body')
 
-<body class="antialiased text-gray-800">
+<body class="antialiased text-gray-800" style="background-image: url(../assets/img/bg2.jpg);">
     <nav class="absolute top-0 z-50 flex flex-wrap items-center justify-between w-full px-2 py-3 navbar-expand-lg">
         <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
             <div class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
@@ -41,11 +41,14 @@
         <section class="absolute w-full h-full">
             <div class="container">
                 <div class="absolute top-0 w-full h-full bg-gray-900 "
-                    style="background-image: url(../assets/img/bg3.jpeg); background-size:cover; background-repeat: no-repeat;">
+                    style="background-image: url(../assets/img/bg2.jpg);  background-repeat: no-repeat;">
                 </div>
                 <div class="container h-full px-4 mx-auto">
-                    <div class="flex items-center content-center justify-center ">
-                        <div class="w-full px-4 lg:w-4/12">
+                    <div class="flex items-center content-center justify-center " style="position: relative;
+                    top: 30%;
+                    left: 25%;
+                    width:55%">
+                        <div class="w-full px-4 lg:w-4/12" style="width: 100% !important;">
                             <div
                                 class="relative flex-col w-full min-w-0 pb-1 mb-6 break-words bg-gray-300 border-0 rounded-lg shadow-lg">
                                 <div class="px-6 py-6 mb-0 rounded-t">
@@ -60,8 +63,9 @@
 
                                     <hr class="mt-6 border-gray-400 border-b-1" />
                                 </div>
-                                <div class="flex-auto px-4 py-10 pt-0 lg:px-10" style="overflow:scroll; height:500px;">
-                                    
+                                <div class="flex-auto px-4 py-10 pt-0 lg:px-10" style="overflow: hidden;
+                                height: auto;">
+
 
                                     <form>
                                         <div class="relative w-full mb-3">
@@ -160,7 +164,7 @@
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                    for="grid-password">about your self</label><textarea 
+                                                    for="grid-password">about your self</label><textarea
                                                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                                                     placeholder="" style="transition: all 0.15s ease 0s;" >
                                                     </textarea>

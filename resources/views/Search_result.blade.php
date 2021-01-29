@@ -4,7 +4,7 @@
     <!--  All snippets are MIT license http://bootdey.com/license -->
     <title>Search users page result - Bootdey.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
@@ -12,7 +12,10 @@
     <style type="text/css">
         body {
             margin-top: 20px;
-            background-color: #eee;
+            /* background-color: #eee; */
+            background-image: url(../assets/img/bg1.jpg);
+            background-size: 160%;
+            background-repeat: no-repeat;
         }
 
 
@@ -119,7 +122,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " >
+    <nav class="navbar navbar-expand-lg " >
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -149,7 +152,7 @@
 
         <div class="container">
             <div class="row ng-scope">
-               
+
                 <div class="col-md-9 col-md-pull-3">
                     <p class="search-results-count">About 4 (0.39 sec.) results</p>
                     <section class="search-result-item">
@@ -231,7 +234,7 @@
                             </div>
                         </div>
                     </section>
-                    
+
                 </div>
             </div>
 

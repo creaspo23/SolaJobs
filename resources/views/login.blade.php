@@ -31,7 +31,7 @@
     <main>
         <section class="absolute w-full h-full">
             <div class="absolute top-0 w-full h-full bg-gray-900"
-                style="background-image: url(../assets/img/bg3.jpeg); background-size: 100%; background-repeat: no-repeat;">
+                style="background-image: url(../assets/img/bg1.jpg); background-size: 100%; background-repeat: no-repeat;">
             </div>
             <div class="container h-full px-4 mx-auto">
                 <div class="flex items-center content-center justify-center h-full">
