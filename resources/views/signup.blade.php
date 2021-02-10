@@ -13,28 +13,29 @@
                     <span class="text-lg text-blue-500 uppercase">S</span>ola<span
                         class="text-lg text-blue-500 uppercase">J</span>obs
                 </a>
+            </div>
+            <button
+                class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
+                type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <i class="text-white fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="items-center flex-grow hidden bg-white lg:flex lg:bg-transparent lg:shadow-none"
+            id="example-collapse-navbar">
+            <ul class="flex flex-col mr-auto list-none lg:flex-row">
+
+            </ul>
+
+            <li class="flex items-center">
                 <button
-                    class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
-                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
-                    <i class="text-white fas fa-bars"></i>
+                    class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-purple-600 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
+                    type="button" style="transition: all 0.15s ease 0s;">
+                    <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Log in </a>
                 </button>
-            </div>
-            <div class="items-center flex-grow hidden bg-white lg:flex lg:bg-transparent lg:shadow-none"
-                id="example-collapse-navbar">
-                <ul class="flex flex-col mr-auto list-none lg:flex-row">
+            </li>
 
-                </ul>
-
-                <li class="flex items-center">
-                    <button
-                        class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-purple-600 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
-                        type="button" style="transition: all 0.15s ease 0s;">
-                        <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Log in </a>
-                    </button>
-                </li>
-
-                </ul>
-            </div>
+            </ul>
+        </div>
         </div>
     </nav>
     <main>
@@ -166,7 +167,7 @@
                                                 <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
                                                     for="grid-password">about your self</label><textarea
                                                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                                    placeholder="" style="transition: all 0.15s ease 0s;" >
+                                                    placeholder="" style="transition: all 0.15s ease 0s;">
                                                     </textarea>
                                             </div>
 
