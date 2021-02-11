@@ -1,13 +1,7 @@
-<head>
-    <meta charset="utf-8">
-    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
-    <!--  All snippets are MIT license http://bootdey.com/license -->
-    <title>Search users page result - Bootdey.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-</head>
+@include('global.header2')
+@yield('title')
+<title>job form</title>
+@yield('body')
 
 <body>
     <div class="container">
@@ -40,22 +34,24 @@
             </select>
             <!-- 5 -->
             <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <label for="age" class="form-label">Range of age</label>
+                <input type="number" class="form-control" id="age" placeholder="max age">
+                <input type="number" class="form-control" id="age1" placeholder="min age">
             </div>
             <!-- 6 -->
+            <div class="col-12">
+                <label for="exp" class="form-label">Years of Experience</label>
+                <input type="number" class="form-control" id="exp" placeholder="">
+            </div>
+            {{-- 7 --}}
             <div class="col-12">
                 <label for="job title" class="form-label">job title</label>
                 <input type="text" class="form-control" id="job title" placeholder="doctor , ...etc">
             </div>
 
-            <!-- 7 -->
+            <!-- 8 -->
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">jobs description</label>
+                <label for="Textarea1" class="form-label">jobs description</label>
                 <textarea class="form-control" id="Textarea1" rows="3"></textarea>
             </div>
 

@@ -10,9 +10,11 @@
                 <a class="inline-block py-2 mr-4 font-sans text-sm font-bold leading-relaxed text-white whitespace-no-wrap text-md"
                     href="{{ '/home' }}" style="font-style: italic; font-family:Roboto;">
                     <img src="../assets/img/logo.svg" width="80" height="100" style="margin-bottom: -15px;">
+                    <div class=" bg-gray-800  rounded-full py-1 px-3 shadow-lg" style="margin-left: -8px;">
                     <span class="text-lg text-blue-500 uppercase">S</span>ola<span
                         class="text-lg text-blue-500 uppercase">J</span>obs
-                </a>
+                    </div>
+                    </a>
                 <button
                     class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
                     type="button" onclick="toggleNavbar('example-collapse-navbar')">

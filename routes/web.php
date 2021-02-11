@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// dashboard
 Route::get('/', function () {
     return view('dashboard');
 });
+Route::get('/form', function () {
+    return view('jobForm');
+});
+
+// web
 Route::get('/home', function () {
     return view('home');
 });
@@ -27,4 +33,7 @@ Route::get('/signup', function () {
 });
 Route::get('/search', function () {
     return view('Search_result');
+});
+Route::get('/detaills', function () {
+    return view('job_detaills');
 });
