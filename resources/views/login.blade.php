@@ -45,7 +45,7 @@
 
 
 
-                                    <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-purple-600 rounded-full shadow-lg"
+                                    <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-blue-600 rounded-full shadow-lg"
                                         style="font-style: italic; font-family:Roboto; margin-bottom:20px ">
 
                                         <span class="text-4xl uppercase ">l</span>og<span
@@ -81,7 +81,7 @@
 
                                     <div class="mt-6 text-center">
                                         <button
-                                            class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-600 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
+                                            class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-blue-500 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
                                             type="button" style="transition: all 0.15s ease 0s;">
                                             Log In
                                         </button>

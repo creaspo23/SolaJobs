@@ -30,7 +30,7 @@
 
             <li class="flex items-center">
                 <button
-                    class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-purple-600 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
+                    class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-blue-600 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
                     type="button" style="transition: all 0.15s ease 0s;">
                     <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Log in </a>
                 </button>
@@ -57,7 +57,7 @@
                                 <div class="px-6 py-6 mb-0 rounded-t">
                                     <div class="mb-3 text-center">
 
-                                        <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-purple-600 rounded-full shadow-lg "
+                                        <div class="inline-block px-4 py-2 mr-4 text-sm text-3xl font-bold leading-relaxed text-white whitespace-no-wrap bg-blue-600 rounded-full shadow-lg "
                                             style="font-style: italic; font-family:Roboto;  ">
                                             <span class="text-4xl uppercase ">S</span>ign<span
                                                 class="text-4xl uppercase ">u</span>p
@@ -147,27 +147,34 @@
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Email</label><input type="email"
+                                                    for="">Email</label><input type="email"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="Email" style="transition: all 0.15s ease 0s;" />
                                             </div>
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Phone Number</label><input type="phone"
+                                                    for="">Phone Number</label><input type="phone"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="+249" style="transition: all 0.15s ease 0s;" />
                                             </div>
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Experience</label><input type="Experience"
+                                                    for="">Experience area's </label><input type="text"
+                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                    placeholder="experience" style="transition: all 0.15s ease 0s;" />
+                                            </div>
+
+                                            <div class="relative w-full mb-3">
+                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                    for="">Years of Experience</label><input type="number"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="experience" style="transition: all 0.15s ease 0s;" />
                                             </div>
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                                    for="grid-password">about your self</label><textarea
+                                                    for="">about your self</label><textarea
                                                     class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                                                     placeholder="" style="transition: all 0.15s ease 0s;">
                                                     </textarea>
@@ -176,7 +183,7 @@
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Password</label><input type="password"
+                                                    for="">Password</label><input type="password"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="Password" style="transition: all 0.15s ease 0s;" />
                                             </div>
@@ -191,7 +198,7 @@
 
                                             <div class="mt-6 text-center">
                                                 <button
-                                                    class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-600 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
+                                                    class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-blue-500 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
                                                     type="button" style="transition: all 0.15s ease 0s;">
                                                     Sign Up
                                                 </button>
