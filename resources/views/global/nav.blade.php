@@ -23,7 +23,7 @@
                     <button
                         class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-gray-800 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
                         type="button" style="transition: all 0.15s ease 0s;">
-                        <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Login</a>
+                        <i class="fas fa-arrow-alt-circle-down"></i><a href=" {{ __('Login') }}"> Login</a>
                     </button>
                 </li>
                 <li class="flex items-center">

@@ -17,6 +17,7 @@
                         <a href="{{ route('pages.dashbord.create') }}">Add
                             Job</a>
                     </button>
+                 
                     <!-- Card stats -->
                     <div class="flex flex-wrap">
                         <div class="w-full">

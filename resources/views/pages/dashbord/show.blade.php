@@ -15,6 +15,14 @@
                     class="p-2 my-5 bg-green-500 text-white rounded-md focus:outline-none focus:ring-2 ring-green-300 ring-offset-2">
                     <a href="/dashbord/{{ $company->id }}/edit">Edit job</a>
                 </button>
+
+                <div>
+                    <button
+                        class="p-2 my-5 bg-blue-500 text-white rounded-md focus:outline-none focus:ring-2 ring-green-300 ring-offset-2">
+                        <a href="/invoice/{{$company->id}}">Invoice</a>
+                    </button>
+                </div>
+
                 <div>
 
                     <!-- Card stats -->
@@ -73,14 +81,13 @@
                                         <h1 class="px-2 text-sm">{{ $company->email }}</h1>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 </body>

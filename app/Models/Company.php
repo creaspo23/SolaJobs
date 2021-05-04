@@ -9,5 +9,18 @@ class Company extends Model
 {
     use HasFactory;
 
-    protected $guarded =[];
+    protected $guarded = [];
+
+
+    public function jobs()
+    
+    {
+        return $this->hasMany(Job::class);
+    }
+
+    public function users()
+
+    {
+        return $this->hasMany(User::class);
+    }
 }

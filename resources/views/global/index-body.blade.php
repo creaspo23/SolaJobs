@@ -32,7 +32,7 @@ top: 60%;">
                                             Jobs
                                         </h5>
                                         <span class="font-semibold text-xl text-gray-800">
-                                            350
+                                         200
                                         </span>
                                     </div>
                                     <div class="relative w-auto pl-4 flex-initial">
