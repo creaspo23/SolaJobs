@@ -8,26 +8,47 @@
 </head>
 
 <body>
-    <p>
+    @if ($company->jobs->count())
+        <div>
+            <h1> Bio about company and its jobs</h1>
+            <ul>
+                Name
+                <li>
+                    {{ $company->name }}
+                </li>
+                @foreach ($company->jobs as $job)
+                    <ul>
+                        <ul>
+                            JobTitle
+                            <li>
+                                {{ $job->jobTitle }}
+                            </li>
+                        </ul>
+                        <ul>
+                            jobDescription
 
-    <h1>
-        <ul>
-            Name
-            <li>
-                {{ $company->name }}
-            </li>
-            jobTitle
-            <li>
-                {{ $company->jobTitle }}
-            </li>
-            
+                            <li>
+                                {{ $job->jobDescription }}
+                            </li>
+                        </ul>
 
-        </ul>
+                        <ul>
+                            Gender
+                            <li>
+                                {{ $job->gender }}
+                            </li>
+                        </ul>
+
+                    </ul>
+            </ul>
+    @endforeach
+
+    </div>
+    @endif
 
 
-    </h1>
 
-    </p>
+
 </body>
 
 </html>

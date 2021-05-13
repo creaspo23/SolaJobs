@@ -13,7 +13,7 @@ class Company extends Model
 
 
     public function jobs()
-    
+
     {
         return $this->hasMany(Job::class);
     }
@@ -22,5 +22,10 @@ class Company extends Model
 
     {
         return $this->hasMany(User::class);
+    }
+    public function addJobs($jobs)
+    {
+
+        $this->jobs()->create($jobs);
     }
 }

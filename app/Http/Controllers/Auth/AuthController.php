@@ -63,8 +63,4 @@ class AuthController extends Controller
         return redirect('login');
     }
 
-    public function home()
-    {
-        return view('home');
-    }
 }

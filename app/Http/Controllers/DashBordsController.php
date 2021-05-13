@@ -8,7 +8,7 @@ use App\Models\Company;
 class DashBordsController extends Controller
 {
 
-   
+
 
     public function index()
 
@@ -35,7 +35,7 @@ class DashBordsController extends Controller
     public function show(Company $company)
 
     {
-       
+
         return view('pages.dashbord.show', compact('company'));
     }
 
@@ -73,9 +73,6 @@ class DashBordsController extends Controller
             'name' => 'required|min:3',
             'email' => 'required|email',
             'state' => 'required',
-            'jobTitle' => 'required',
-            'jobDescription' => 'required',
-            'gender' => 'required',
         ]);
     }
 }

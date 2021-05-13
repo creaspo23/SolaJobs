@@ -32,9 +32,7 @@
                                     <th class="px-4 py-3">Company name</th>
                                     <th class="px-4 py-3"> Company Email</th>
                                     <th class="px-4 py-3">state</th>
-                                    <th class="px-4 py-3">jobTitle</th>
-                                    <th class="px-4 py-3">jobDescription</th>
-                                    <th class="px-4 py-3">gender</th>
+                                   
 
                                 </tr>
                                 @foreach ($companies as $company)
@@ -44,9 +42,7 @@
                                                 href="/dashbord/{{ $company->id }}">{{ $company->name }}</a></td>
                                         <td class="px-4 py-3">{{ $company->email }}</td>
                                         <td class="px-4 py-3">{{ $company->state }}</td>
-                                        <td class="px-4 py-3">{{ $company->jobTitle }}</td>
-                                        <td class="px-4 py-3">{{ $company->jobDescription }}</td>
-                                        <td class="px-4 py-3">{{ $company->gender }}</td>
+        
                                 @endforeach
 
                             </table>
