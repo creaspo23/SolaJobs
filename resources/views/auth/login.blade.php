@@ -62,7 +62,7 @@
                                 <div class="mb-3 font-bold text-center text-gray-500">
 
                                 </div>
-                                <form method="POST" action="{{ route('login') }}">
+                                <form method="POST" action="/login">
                                     @csrf
                                     <div class="relative w-full mb-3">
                                         <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
@@ -70,9 +70,9 @@
                                         <input type="email" id="email" name="email"
                                             class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline @error('email') is-invalid @enderror"
                                             value="{{ old('email') }}" required autocomplete="email" autofocus
-                                            placeholder="email" style="transition: all 0.15s ease 0s;" />
+                                            placeholder="email" style="transition: all 0.15s ease 0s;" required />
                                         @error('email')
-                                            <span class="invalid-feedback" role="alert">
+                                            <span class="invalid-feedback" role="alert" style="color: red">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -83,16 +83,12 @@
                                         <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
                                             for="password">{{ __('Password') }}
                                         </label>
-                                            <input 
-                                            type="password"
-                                            name="password" 
-                                            id="password"
+                                        <input type="password" name="password" id="password"
                                             class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline @error('password') is-invalid @enderror"
-                                           required autocomplete="current-password"
-                                            placeholder="Password" style="transition: all 0.15s ease 0s;"
-                                             />
+                                            required autocomplete="current-password" placeholder="Password"
+                                            style="transition: all 0.15s ease 0s;" required />
                                         @error('password')
-                                            <span class="invalid-feedback" role="alert">
+                                            <span class="invalid-feedback" role="alert" style="color: red">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -102,16 +98,18 @@
                                     <div class="mt-6 text-center">
                                         <button
                                             class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-600 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
-                                            type="button" style="transition: all 0.15s ease 0s;">
-                                            {{ __('Login') }}
+                                            type="submit" style="transition: all 0.15s ease 0s;">
+                                            login
                                         </button>
                                     </div>
 
                                 </form>
+
+                                @include('global.errors')
                                 <div class="flex flex-wrap mt-6">
 
                                     <div class="w-1/2 mb-2 font-bold text-center gray-700 text- text-s ">
-                                        <a href="{{ route('register') }}" class="text-gray-900"><small>Create new
+                                        <a href="/auth/register" class="text-gray-900"><small>Create new
                                                 account</small></a>
                                     </div>
                                 </div>
@@ -125,11 +123,3 @@
         </section>
     </main>
 </body>
-
-<script>
-    function toggleNavbar(collapseID) {
-        document.getElementById(collapseID).classList.toggle("hidden");
-        document.getElementById(collapseID).classList.toggle("block");
-    }
-
-</script>

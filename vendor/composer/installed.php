@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '2663f38a4eb9d3eff0363de132f89033581af396',
+    'reference' => 'f0f17b692b280cd9832f1ca15c009496b81e2eee',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -447,6 +447,15 @@
         0 => '*',
       ),
     ),
+    'laravel-frontend-presets/tailwindcss' => 
+    array (
+      'pretty_version' => '4.3.1',
+      'version' => '4.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4f821e72ff7a46057d815d450ce8f7c64f7abe7a',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v8.18.1',
@@ -463,7 +472,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '2663f38a4eb9d3eff0363de132f89033581af396',
+      'reference' => 'f0f17b692b280cd9832f1ca15c009496b81e2eee',
     ),
     'laravel/sail' => 
     array (

@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\nError: PostCSS plugin tailwindcss requires PostCSS 8.\nMigration guide for end-users:\nhttps://github.com/postcss/postcss/wiki/PostCSS-8-for-end-users\n    at Processor.normalize (/home/creaspo/Desktop/SolaJobs-main/node_modules/postcss/lib/processor.js:153:15)\n    at new Processor (/home/creaspo/Desktop/SolaJobs-main/node_modules/postcss/lib/processor.js:56:25)\n    at postcss (/home/creaspo/Desktop/SolaJobs-main/node_modules/postcss/lib/postcss.js:55:10)\n    at /home/creaspo/Desktop/SolaJobs-main/node_modules/postcss-loader/src/index.js:140:12\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at /home/creaspo/Desktop/SolaJobs-main/node_modules/webpack/lib/NormalModule.js:316:20\n    at /home/creaspo/Desktop/SolaJobs-main/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /home/creaspo/Desktop/SolaJobs-main/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/home/creaspo/Desktop/SolaJobs-main/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at /home/creaspo/Desktop/SolaJobs-main/node_modules/postcss-loader/src/index.js:208:9\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)");
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -93,30 +104,19 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9qcy9hcHAuanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
 
-/***/ }),
-
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9hcHAuc2Nzcz8wZTE1Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6Ii4vcmVzb3VyY2VzL3Nhc3MvYXBwLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyByZW1vdmVkIGJ5IGV4dHJhY3QtdGV4dC13ZWJwYWNrLXBsdWdpbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/app.scss\n");
 
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!***********************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/creaspo/Desktop/SolaJobs-main/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/creaspo/Desktop/SolaJobs-main/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /home/creaspo/Desktop/SolaJobs-main/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })
