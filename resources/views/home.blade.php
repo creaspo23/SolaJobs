@@ -43,12 +43,8 @@
                         </button>
                     </a>
                 </div>
-
             </div>
         </div>
-
-
-
     </main>
     <footer class="relative pt-8 pb-6 bg-gray-300">
         <div class="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none"
@@ -82,7 +78,6 @@
                         </button>
                     </div>
                 </div>
-
             </div>
             <hr class="my-6 border-gray-400" />
             <div class="flex flex-wrap items-center justify-center md:justify-between">
@@ -101,5 +96,4 @@
         document.getElementById(collapseID).classList.toggle("hidden");
         document.getElementById(collapseID).classList.toggle("block");
     }
-
 </script>

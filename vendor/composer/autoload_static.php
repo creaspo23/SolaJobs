@@ -129,6 +129,7 @@ class ComposerStaticInit65199fcd687e3c9e3f2c89d52ec15d96
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
+            'LaravelFrontendPresets\\TailwindCssPreset\\' => 41,
         ),
         'I' => 
         array (
@@ -408,6 +409,10 @@ class ComposerStaticInit65199fcd687e3c9e3f2c89d52ec15d96
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'LaravelFrontendPresets\\TailwindCssPreset\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -548,10 +553,6 @@ class ComposerStaticInit65199fcd687e3c9e3f2c89d52ec15d96
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
-        'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
-        'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
-        'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
-        'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\CompanyJobsController' => __DIR__ . '/../..' . '/app/Http/Controllers/CompanyJobsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\DashBordsController' => __DIR__ . '/../..' . '/app/Http/Controllers/DashBordsController.php',
@@ -2669,6 +2670,8 @@ class ComposerStaticInit65199fcd687e3c9e3f2c89d52ec15d96
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPreset' => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src/TailwindCssPreset.php',
+        'LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPresetServiceProvider' => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src/TailwindCssPresetServiceProvider.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',

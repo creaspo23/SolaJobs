@@ -79,16 +79,21 @@
                     </li>
                     <li class="items-center">
                         <a class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
-                            href="/home"><i class="fas fa-user-circle text-gray-500 mr-2 text-sm"></i>
+                            href="/home"><i class="fas fa- fa-bars text-gray-500 mr-2 text-sm"></i>
                             Visit Website</a>
                     </li>
+                    @if (Auth::check())
+                        <li class="nav-item dropdown">
+                            <a class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
+                                href=""><i class="fas fa-user-circle  text-gray-500 mr-2 text-sm"></i>
+                                {{ Auth::user()->name }}</a>
+                    @endif
+
                     <li class="nav-item dropdown">
-                        <a class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block" href=""><i
-                                class="fas fa-fingerprint text-gray-500 mr-2 text-sm"></i>
+                        <a class="text-gray-800 hover:text-gray-600 text-xs uppercase py-3 font-bold block"
+                            href="/logout"><i class="fas fa-fingerprint text-gray-500 mr-2 text-sm"></i>
                             Logout</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
+
                     </li>
 
                 </ul>
