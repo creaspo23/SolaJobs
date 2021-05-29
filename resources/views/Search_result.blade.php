@@ -133,12 +133,15 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ '/home' }}">Home</a>
               </li>
+              @if (Auth::check())
+              @else
               <li class="nav-item">
-                <a class="nav-link" href="{{ '/login' }}">login</a>
+                <a class="nav-link" href="{{ '/auth/login' }}">login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ '/signup' }}" >signup</a>
+                <a class="nav-link" href="{{ '/auth/register' }}" >signup</a>
               </li>
+              @endif
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -154,83 +157,28 @@
             <div class="row ng-scope">
 
                 <div class="col-md-9 col-md-pull-3">
-                    <section class="search-result-item">
-                        <a class="image-link" href="#"><img class="image"
-                            src="../assets/img/co1.jpeg">
-                        </a>
-                        <div class="search-result-item-body">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <h4 class="search-result-item-heading"><a href="#">Zain SD</a></h4>
-                                    <p class="info">Khartoum, st 20188</p>
-                                    <p class="description">job description</p>
-                                </div>
-                                <div class="col-sm-3 text-align-center">
-                                    <p class="value3 mt-sm">$9, 700</p>
-                                    <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-danger btn-info btn-sm"
-                                        href="#">Request this job</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="search-result-item">
-                        <a class="image-link" href="#"><img class="image"
-                            src="../assets/img/co2.jpeg">
-                        </a>
-                        <div class="search-result-item-body">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <h4 class="search-result-item-heading"><a href="#">MTN SD</a> <span
-                                            class="badge bg-primary fw-normal pull-right">Best Deal!</span></h4>
-                                    <p class="info">north state, bb 20188</p>
-                                    <p class="description">job description</p>
-                                </div>
-                                <div class="col-sm-3 text-align-center">
-                                    <p class="value3 mt-sm">$10, 300</p>
-                                    <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-danger btn-info btn-sm"
-                                        href="#">Request this job</a>
+                    @foreach ($jobs as $job)
+                        <section class="search-result-item">
+                            <a class="image-link" href="#"><img class="image"
+                                src="{{$job->company->logo}}">
+                            </a>
+                            <div class="search-result-item-body">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <h4 class="search-result-item-heading"><a href="#">{{$job->company->name}}</a></h4>
+                                        <h4 class="search-result-item-heading"><a href="#">{{$job->jobTitle}}</a></h4>
+                                        <p class="info">{{$job->gender}}</p>
+                                        <p class="description">{{$job->jobDescription}}</p>
+                                    </div>
+                                    <div class="col-sm-3 text-align-center">
+                                        <p class="value3 mt-sm">$9, 700</p>
+                                        <p class="fs-mini text-muted">PER WEEK</p>php<a class="btn btn-danger btn-info btn-sm"
+                                            href="{{route('apply', $job->id)}}">Request this job</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="search-result-item">
-                        <a class="image-link" href="#"><img class="image"
-                            src="../assets/img/co3.png">
-                        </a>
-                        <div class="search-result-item-body">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <h4 class="search-result-item-heading"><a href="#">Sudani</a></h4>
-                                    <p class="info">portsudan, bb 20188</p>
-                                    <p class="description">job description</p>
-                                </div>
-                                <div class="col-sm-3 text-align-center">
-                                    <p class="value3 mt-sm">$2, 300</p>
-                                    <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-danger btn-info btn-sm"
-                                        href="#">Request this job</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="search-result-item">
-                        <a class="image-link" href="#"><img class="image"
-                            src="../assets/img/co4.jpeg">
-                        </a>
-                        <div class="search-result-item-body">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <h4 class="search-result-item-heading"><a href="#">huawei SD</a></h4>
-                                    <p class="info">khartoum,</p>
-                                    <p class="description">job description</p>
-                                </div>
-                                <div class="col-sm-3 text-align-center">
-                                    <p class="value3 mt-sm">$15, 300</p>
-                                    <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-danger btn-info btn-sm"
-                                        href="#">Request this job</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    @endforeach
 
                 </div>
             </div>

@@ -23,7 +23,7 @@
                                 <div class="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
                                     <h1 class="text-xl font-semibold">Hello there 👋, <span class="font-normal">please
                                             edit your information to continue</span></h1>
-                                    <form class="mt-6" method="POST" action="/dashbord/{{ $company->id }}">
+                                    <form class="mt-6" method="POST" action="/dashbord/{{ $company->id }}" enctype="multipart/form-data">
                                         @method('PATCH')
                                         @csrf
                                         <div class="flex justify-between gap-3">
@@ -49,6 +49,13 @@
                                             class="block mt-2 text-xs font-semibold text-gray-600 uppercase">state</label>
                                         <input id="state" type="text" name="state" placeholder="Red Nile"
                                             autocomplete=" given-state" value="{{ old('state') ?? $company->state }}"
+                                            class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
+                                            required />
+
+                                            <label for="state"
+                                            class="block mt-2 text-xs font-semibold text-gray-600 uppercase">state</label>
+                                        <input id="logo" type="text" name="logo" placeholder="logo"
+                                            value="{{ old('logo') ?? $company->logo }}"
                                             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
                                             required />
                                         <button type="submit"

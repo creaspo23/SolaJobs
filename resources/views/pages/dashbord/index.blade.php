@@ -17,32 +17,37 @@
                         <a href="{{ route('pages.dashbord.create') }}">Add
                             Job</a>
                     </button>
-                 
+
                     <!-- Card stats -->
                     <div class="flex flex-wrap">
                         <div class="w-full">
                         </div>
                         <div class="w-full ">
 
-                            <p class="text-lg text-center font-bold mx-5 bg-white">ِAll Companies</p>
-                            <table class="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-800 text-gray-200 mt-5">
 
+                            <table class=" m-5 w-5/6 mx-auto bg-gray-800 text-gray-200 mt-5" style="width:100%">
+                            <p class=" rounded-t-lg text-lg text-center font-bold mx-5 bg-gray-800 text-gray-200" style="margin-bottom: -20px;"  > All Companies</p>
                                 <tr class="text-left border-b border-gray-300">
                                     <th class="px-4 py-3">#</th>
+                                    <th class="px-4 py-3">Company logo</th>
                                     <th class="px-4 py-3">Company name</th>
                                     <th class="px-4 py-3"> Company Email</th>
                                     <th class="px-4 py-3">state</th>
-                                   
+
 
                                 </tr>
                                 @foreach ($companies as $company)
                                     <tr class="bg-gray-700 border-b border-gray-600">
                                         <td class="px-4 py-3">{{ $company->id }}</td>
+                                        <td class="px-4 py-3">
+                                            <img style="width: 195px;margin: 5px 5px 0;" src="{{$company->logo}}"alt="logo"
+                                            class="logo-default">
+                                        </td>
                                         <td class="px-4 py-3 text-blue-500"> <a
                                                 href="/dashbord/{{ $company->id }}">{{ $company->name }}</a></td>
                                         <td class="px-4 py-3">{{ $company->email }}</td>
                                         <td class="px-4 py-3">{{ $company->state }}</td>
-        
+
                                 @endforeach
 
                             </table>

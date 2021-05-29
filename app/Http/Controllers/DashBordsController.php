@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Barryvdh\DomPDF\Facade as PDF;
 use App\Models\Company;
+use Illuminate\Http\Request;
 
 class DashBordsController extends Controller
 {
@@ -23,10 +24,15 @@ class DashBordsController extends Controller
         return view('pages.dashbord.create');
     }
 
-    public function store()
-
+    public function store(Request $request)
     {
-        Company::create($this->validateRequest());
+        $company = Company::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'state' => $request->state,
+        ]);
+
+        $company->addMedia($request->logo)->toMediaCollection('logo');
 
         return redirect('/dashbord');
     }
@@ -46,10 +52,16 @@ class DashBordsController extends Controller
     }
 
 
-    public function update(Company $company)
+    public function update(Request $request, Company $company)
 
     {
-        $company->update($this->validateRequest());
+        $company->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'state' => $request->state,
+        ]);
+
+        $company->addMedia($request->logo)->toMediaCollection('logo');
 
         return redirect('/dashbord/' . $company->id);
     }
@@ -73,6 +85,7 @@ class DashBordsController extends Controller
             'name' => 'required|min:3',
             'email' => 'required|email',
             'state' => 'required',
+            'logo' => 'required',
         ]);
     }
 }

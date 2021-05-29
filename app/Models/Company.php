@@ -4,13 +4,23 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
-class Company extends Model
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+class Company extends Model implements HasMedia
 {
-    use HasFactory;
+    use HasFactory, InteractsWithMedia;
 
     protected $guarded = [];
 
+    public function getLogoAttribute()
+    {
+        return $this->getFirstMediaUrl('logo');
+    }
+
+    public function registerMediaCollections(): void
+    {
+        $this->addMediaCollection('logo')->singleFile();
+    }
 
     public function jobs()
 
@@ -28,4 +38,9 @@ class Company extends Model
 
         $this->jobs()->create($jobs);
     }
+
 }
+
+
+
+

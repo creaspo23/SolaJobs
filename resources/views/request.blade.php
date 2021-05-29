@@ -29,7 +29,7 @@
                     <button
                         class="px-4 py-2 mb-3 ml-3 text-xs font-bold text-purple-600 uppercase bg-white rounded shadow outline-none active:bg-gray-100 hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0"
                         type="button" style="transition: all 0.15s ease 0s;">
-                        <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/login' }}"> Log in </a>
+                        <i class="fas fa-arrow-alt-circle-down"></i><a href="{{ '/auth/login' }}"> Log in </a>
                     </button>
                 </li>
 
@@ -67,7 +67,7 @@
                                 height: auto;">
 
 
-                                    <form method="POST" action="{{ route('register') }}">
+                                    <form method="POST" action="{{ route('applies.store') }}">
                                         @csrf
                                         <div class="relative w-full mb-3">
                                             <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
@@ -85,30 +85,18 @@
 
                                         <div class="relative w-full mb-3">
                                             <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                for="grid-password">Full Name</label><input type="Name"
+                                                for="grid-password">Full Name</label>
+                                                <input type="Name" name="full_name"
                                                 class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                 placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
                                         </div>
 
                                         <div class="relative w-full mb-3">
-                                            <label
-                                                class='block mb-3 text-xs font-bold text-gray-700 uppercase'>Brithday</label>
-                                            <div class="flex justify-between ">
-                                                <select
-                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none justify-items-stretch">
-                                                    <option>day ...</option>
-                                                </select>
-
-                                                <select
-                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none justify-items-stretch">
-                                                    <option>month ...</option>
-                                                </select>
-
-                                                <select
-                                                    class="block text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none">
-                                                    <option>year ...</option>
-                                                </select>
-                                            </div>
+                                            <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
+                                                for="grid-password">Bithday</label>
+                                                <input type="date"
+                                                class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
+                                                placeholder="Bithday" style="transition: all 0.15s ease 0s;" />
                                         </div>
 
                                         <div class="relative w-full mb-3">
@@ -116,7 +104,7 @@
                                                 your
                                                 State</label>
                                             <div class="relative flex-shrink inline-block w-full">
-                                                <select
+                                                <select name="state"
                                                     class="block w-full px-4 py-2 pr-8 text-gray-600 bg-white border border-gray-400 rounded shadow-inner appearance-none">
                                                     <option>choose ...</option>
                                                     <option>Kh</option>
@@ -133,7 +121,7 @@
                                             <div class="">
                                                 <div class="mb-2 ">
                                                     <div class="inline-block ml-2 text-xs align-middle form-switch ">
-                                                        <input type="checkbox" name="1" id="1"
+                                                        <input type="checkbox" name="gender" id="1"
                                                             class="form-switch-checkbox" />
                                                         <label class="form-switch-label" for="1"></label>
                                                     </div>
@@ -142,7 +130,7 @@
 
                                                 <div class="mb-2">
                                                     <div class="inline-block text-xs align-middle form-switch">
-                                                        <input type="checkbox" name="2" id="2"
+                                                        <input type="checkbox" name="gender" id="2"
                                                             class="form-switch-checkbox" style="margin-left: 8px;" />
                                                         <label class="form-switch-label" for="2"></label>
                                                     </div>
@@ -152,7 +140,7 @@
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Email</label><input type="email"
+                                                    for="grid-password">Email</label><input type="email" name="email"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="Email" style="transition: all 0.15s ease 0s;" />
                                             </div>
@@ -165,7 +153,7 @@
 
                                             <div class="relative w-full mb-3">
                                                 <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Experience</label><input type="Experience"
+                                                    for="grid-password">Experience</label><input type="Experience" name="exprince"
                                                     class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
                                                     placeholder="experience" style="transition: all 0.15s ease 0s;" />
                                             </div>
@@ -178,29 +166,14 @@
                                                     </textarea>
                                             </div>
 
-
-                                            <div class="relative w-full mb-3">
-                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">Password</label><input type="password"
-                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
-                                                    placeholder="Password" style="transition: all 0.15s ease 0s;" />
-                                            </div>
-
-                                            <div class="relative w-full mb-3">
-                                                <label class="block mb-2 text-xs font-bold text-gray-700 uppercase"
-                                                    for="grid-password">confierm password</label><input type="password"
-                                                    class="w-full px-3 py-3 text-sm text-gray-700 placeholder-gray-400 bg-white rounded shadow focus:outline-none focus:shadow-outline"
-                                                    placeholder="confierm password"
-                                                    style="transition: all 0.15s ease 0s;" />
-                                            </div>
-
                                             <div class="mt-6 text-center">
-                                                <button
+                                                <button type="submit"
                                                     class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-600 rounded shadow outline-none active:bg-gray-700 hover:shadow-lg focus:outline-none"
                                                     type="button" style="transition: all 0.15s ease 0s;">
-                                                    Sign Up
+                                                    Apply
                                                 </button>
                                             </div>
+                                            <input type="hidden" name="job_id" value="{{$job_id}}">
                                     </form>
                                 </div>
                             </div>

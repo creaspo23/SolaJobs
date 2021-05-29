@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminRegisterController;
+use App\Http\Controllers\ApplyController;
+use App\Models\Job;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -15,11 +19,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('dashbord/register', [AdminRegisterController::class, 'showRegisterForm'])->name('admin.register-form');
+Route::post('dashbord/register', [AdminRegisterController::class, 'register'])->name('admin.register');
+
+Route::get('dashbord/login', [AdminController::class, 'showLoginForm'])->name('admin.login-form');
+Route::post('dashbord/login', [AdminController::class, 'login'])->name('admin.login');
+
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('pages.master');
 
 
- Route::get('/dashbord', 'App\Http\Controllers\DashBordsController@index')->name('pages.dashbord.index');
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth:admin'])->group(function () {
+    Route::get('/dashbord', 'App\Http\Controllers\DashBordsController@index')->name('pages.dashbord.index');
     Route::get('/dashbord/create', 'App\Http\Controllers\DashBordsController@create')->name('pages.dashbord.create');
     Route::post('/dashbord', 'App\Http\Controllers\DashBordsController@store')->name('pages.dashbord.store');
     Route::get('/dashbord/{company}', 'App\Http\Controllers\DashBordsController@show')->name('pages.dashbord.show');
@@ -31,8 +41,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
-
-//Route::resource('pages/dashbord', 'DashBordsController')->middleware('auth');
+Route::resource('pages/dashbord', 'DashBordsController')->middleware('auth');
 
 
 Route::get('/home', function () {
@@ -50,5 +59,20 @@ Route::get('/logout', 'App\Http\Controllers\SessionsController@destroy')->name('
 
 
 Route::get('/search', function () {
-    return view('Search_result');
+    $jobs = Job::latest()->get();
+    return view('Search_result', [
+        'jobs' => $jobs,
+    ]);
 });
+
+Route::get('/apply/{id}', function ($id) {
+    return view('request', [
+        'job_id' => $id,
+    ]);
+})->name('apply');
+
+Route::post('/applies', [ApplyController::class, 'store'])->name('applies.store');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
